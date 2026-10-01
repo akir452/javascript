@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Converta As Temperaturas</h1>
+    <input type="number" id="temp">
+    <input type="button" value="click" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+        function clicar(){
+            const temp = document.getElementById("temp")
+            const result = document.getElementById("res")
+            const con = Number(temp.value)
+
+            const f = (con * 1.8) + 32
+
+            result.innerHTML = `<p> seu valor convertido é ${f} F</p>` 
+        }
+    </script>
+</body>
+</html>

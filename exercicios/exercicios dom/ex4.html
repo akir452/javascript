@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador</title>
+</head>
+<body>
+    <h1 id="titulo">Acrecente um numero</h1>
+    <div id="nivel">
+        <p> Nivel:0</p>
+    </div>
+    <div id="acrescentar">0</div>
+    
+    <input type="button" value="+" id="mais" onclick="somar()">
+    <input type="button" value="-" id="menos" onclick="sub()">
+
+    <script>
+       const titulo = document.getElementById("titulo")
+       const nivel = document.getElementById("nivel").p
+       const acrescentar = document.getElementById("acrescentar")
+        let numero = 0
+
+
+
+        function somar() {
+            numero++
+            acrescentar.textContent = numero
+            atualizar()
+            zerar()
+        }
+
+        
+
+        function sub(){
+
+            if( numero > 0){
+            numero--
+            acrescentar.textContent = numero
+            atualizar()
+            
+        }
+
+       
+     }
+
+     function atualizar(){
+        if (numero> 30) {
+            titulo.style.color = "red"
+        }
+        else{
+            titulo.style.color = "black"
+        }
+     }
+
+     function zerar(){
+     if (numero == 100){
+        numero -= numero
+
+        acrescentar.textContent = numero
+     }
+    }
+
+    function acrescentar(){
+        if (zerar() == true){
+
+        }
+    }
+    </script>
+
+
+</body>
+</body>
+</html>

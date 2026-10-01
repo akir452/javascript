@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mensagem"> Clique no Botão</h1>
+    <button id="botao" onclick="clicar()">Clique Aqui</button>
+
+    <script>
+        const mensagem = document.getElementById("mensagem")
+        function clicar(){
+            mensagem.innerHTML = `Voce clicou no botao`
+        }
+    </script>
+</body>
+</html>

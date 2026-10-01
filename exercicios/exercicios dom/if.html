@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de IF e ELSE</title>
+</head>
+<body>
+    <h1> Me indique sua velocidade</h1>
+    <p>velocidade do carro <input type="number" id="valor"></p>
+    <input type="button" value="click" onclick="clicar()">
+    <div id="result">
+
+    </div>
+
+    <script>
+        function clicar() {
+    var valor = document.getElementById("valor")
+    var res = document.getElementById("result")
+    var vel = Number(valor.value)
+
+    if (vel > 60) {
+        res.innerHTML = `Sua velocidade é de ${vel} KM/h`
+        res.innerHTML += `<p>Você ultrapassou a velocidade. <strong>MULTADO</strong></p>`
+    } else {
+        res.innerHTML = `Sua velocidade é de ${vel} KM/h`
+        res.innerHTML += `<p>Boa viagem!</p>`
+    }
+}
+    </script>
+</body>
+</html>

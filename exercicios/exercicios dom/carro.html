@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual seu carro?</h1>
+    <input type="text" id="modelo">
+    <input type="button" value="click"  onclick="clicar()">
+    <div id="result"></div>
+    <script>
+        function clicar(){
+        const carro = document.getElementById("modelo")
+        const resultado = document.getElementById("result")
+        if(carro.value == "kiwid"){
+            resultado.innerHTML = `credo`
+        }
+        else{
+            resultado.innerHTML = `bom carro`
+        }
+
+        }
+    </script>
+</body>
+</html>

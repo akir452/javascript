@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello world</title>
+</head>
+<body>
+    <h1>Me diga seu nome</h1>
+    <input type="text" id="nome">
+    <input type="button" value="click" onclick="clicar()">
+    <div id="resut"></div>
+
+    <script>
+        function clicar() {
+            
+            let nome = document.getElementById("nome")
+            let resut = document.getElementById("resut")
+            const reform = nome.value.toLowerCase()
+
+            if (reform == "hitler" || reform =="trump") {
+                window.alert("seu doente")
+                window.close()
+            }
+
+
+            else{
+                resut.innerHTML = `<p> Hello World </p>`
+            } 
+        }
+    </script>
+</body>
+</html>
